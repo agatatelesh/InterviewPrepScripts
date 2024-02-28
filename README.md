@@ -8,13 +8,15 @@ When the object stops being dragged, the script checks its position: if it is cl
 
 ![Screenshot_4](https://github.com/agatatelesh/InterviewPrepScripts/assets/41807041/bb6e17a6-5dfa-4fa4-a794-49274c5f53d6)
 
-Example on the IDrag script:
+#### Example on the IDrag script:
 
 public interface IDrag {
     void onStartDrag();
     void onEndDrag();
 }
 
-##### 2. DragAndDropPuzzleManager
+### 2. DragAndDropPuzzleManager
 
 This script in Unity controls the solution to a drag-and-drop puzzle. It contains a Unity event to signal that the puzzle has been solved, and a boolean variable indicating whether the puzzle has been solved. The script also contains a list of objects of type `DraggbleScript` representing the dragged puzzle elements. In the `Update` method, it checks to see if all the dragged elements are in their places, and if so, it sets the `solved` flag to `true` and calls the `onPuzzleSolved` event.
+
+![Screenshot_3](https://github.com/agatatelesh/InterviewPrepScripts/assets/41807041/1f298b66-235c-4831-9447-0483086ebd80)
